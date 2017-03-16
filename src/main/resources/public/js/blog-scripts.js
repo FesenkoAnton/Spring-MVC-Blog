@@ -1,3 +1,8 @@
-/**
- * Created by antfesenko on 09.03.2017.
- */
+$(function() {
+    $('#messages li').click(function() {
+        $(this).fadeOut();
+    });
+    setTimeout(function() {
+        $('#messages li.info').fadeOut();
+    }, 3000);
+});
